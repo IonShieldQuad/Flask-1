@@ -1,0 +1,24 @@
+
+{% extends "base.html" %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+<div class="header">Welcome, {{ current_user.user_id }}!</div>
+<div id="out">
+    <table class="light-border max-content">
+        <caption>Files</caption>
+        <tr><th>Name</th><th>Size</th><th>Download</th><th>Delete</th></tr>
+         {% for file in files %}
+        <tr><td>{{ file }}</td><td>{{ files[file] }}</td><td><a href="download/{{ file }}" target="_blank">Download</a></td><td><a href="delete/{{ file }}">Delete</a></td></tr>
+         {% endfor %}
+    </table>
+</div>
+<p class="light-border max-content"><a href="upload">Upload</a></p>
+{% if current_user.user_id == 'admin' %}
+<p class="light-border max-content"><a href="admin">Admin</a></p>
+{% endif %}
+<p class="light-border max-content"><a href="logout">Log out</a></p>
+{% endblock %}

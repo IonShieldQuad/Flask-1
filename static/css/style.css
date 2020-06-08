@@ -1,0 +1,134 @@
+html {
+	font-family: Calibri, sans-serif;
+	background-color: #999;
+}
+body {
+	margin: 0px auto 0px auto;
+	padding: 20px;
+	background-color: #ddd;
+	border: 1px solid #777;
+	max-width: 700px;
+	min-height: 300px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 100px -70px black;
+}
+
+a {
+	color: #235a81;
+	text-decoration: none;
+}
+a:hover {
+	color: #aaaaff;
+	text-decoration: underline;
+}
+
+.header {
+	border: 1px solid #888;
+	padding: 20px;
+	background-color: inherit;
+	border-radius: 10px;
+	box-shadow: 0px 0px 50px -40px black;
+	
+	font-size: 2em;
+}
+
+.light-border {
+	border-radius: 5px;
+	border: 1px solid #888;
+	padding: 1px 5px 1px 5px;
+}
+
+.max-content {
+    width: max-content;
+}
+
+div.box, fieldset, form.vis {
+	border: 1px solid #888;
+	padding: 5px 20px 5px 20px;
+	margin: 10px 0px;
+	background-color: #ccc;
+	border-radius: 10px;
+	box-shadow: 0px 0px 50px -40px black inset;
+}
+
+select {
+	border: 1px solid #777;
+	border-radius: 4px;
+}
+
+input, button, textarea {
+	border: 1px solid #777;
+	border-radius: 4px;
+	background-color: white;
+	color: black;
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+input, button {
+	padding: 2px 5px 2px 5px;
+	background-color: #d3dce3;
+}
+input:hover, button:hover {
+	background-color: #fff;
+}
+
+div#out {
+	border: 1px solid #888;
+	padding: 10px 20px 10px 20px;
+	margin: 10px 30px 10px 30px;
+	background-color: #ccc;
+	border-radius: 10px;
+	box-shadow: 0px 0px 50px -45px black inset;
+}
+div#out p {
+	white-space:pre-wrap;
+}
+
+#out p {
+	margin: 5px 0px 5px 0px;
+}
+
+table {
+	caption-side: top;
+	table-layout: fixed;
+	border-collapse: collapse;
+	width: 100%;
+	background-color: #d3dce3;
+}
+
+table caption {
+	border: inherit;
+	border-bottom: none;
+	background-color: inherit;
+	font-size: 1em;
+	font-family: "Arial";	
+}
+
+table thead, table tbody, table tfoot {
+	border: inherit;
+}
+
+table tr, table td, table th {
+	border: inherit;
+	word-wrap: break-word;
+}
+
+table input, table button, table form {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	background-color: #ddd;
+}
+
+table input:hover, table button:hover, table form:hover {
+	background-color: #fff;
+}
+
+div.alert {
+	color: #e32f3c;
+	border: 1px dashed #e32f3c;
+	padding: 0px 5px;
+	width: max-content;
+	box-shadow: 0px 0px 8px -3px red;
+	border-radius: 3px;
+}
